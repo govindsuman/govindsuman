@@ -1,0 +1,96 @@
+**********//***********Auth**********//************
+composer require laravel/ui
+php artisan ui:auth
+php artisan ui bootstrap --auth 
+npm install
+npm run dev
+
+
+
+php artisan make:controller \\Admin\\AdminController -r -mUser
+ 
+php artisan make:model \\Admin\Category -crm  
+
+php artisan make:model Modelname -crm
+
+php artisan make:controller RegisterController -r
+
+
+Step 1: Install Laravel New Setup
+  =>composer create-project --prefer-dist laravel/laravel blog "5.5.*"
+  =>composer create-project --prefer-dist laravel/laravel Blog
+
+Step 2: Generate Model and Migration
+  =>php artisan make:model Car --migration
+step :3
+  =>php artisan make:controller PostController -r
+
+
+/**************Curd cmmand  Genrrate*************
+ composer require doctrine/inflector:2.0.0
+
+
+
+
+
+/**************Curd Generate  impotent*************
+/*/*  php artisan make:model Modelname -crm   
+      php artisan make:model ModelName -a
+
+  *//////
+
+1.
+Step 1 : Install Laravel 7 
+	 => composer create-project --prefer-dist laravel/laravel blog
+
+Step 3: Create Migration
+	=>php artisan make:migration create_products_table --create=products
+             $table->id();
+             $table->string('name');
+             $table->text('detail');
+             $table->timestamps();
+	=>php artisan migrate
+Step 4: Add Resource Route
+	=> Route::resource('products','ProductController');
+Step 5: Add Controller and Model
+        =>php artisan make:controller ProductController --resource --model=Product
+
+php artisan serve
+2.
+=>php artisan make:model Contact --migration
+=>php artisan migrate
+=>php artisan make:controller ContactController --resource
+
+3.
+=>php artisan make:model Post -m   //Model and Migration File
+=>php artisan migrate
+=>php artisan make:controller PostController --resource
+4
+=>php artisan make:model Corona -m
+=>php artisan migrate
+=>php artisan make:controller CoronaController --resource
+=>composer require laravel/ui
+
+
+php artisan make:controller abController --resource --model=ab  
+
+
+/*************Multiple Role Based Authentication////////////
+
+=>composer create-project --prefer-dist laravel/laravel devopsschool "5.8.*"
+php artisan make:auth
+php artisan make:model Role -m	
+
+php artisan make:seed UsersTableSeeder
+php artisan make:seed RolesTableSeeder
+
+
+
+{{ implode(',',$user->roles()-grt()->pluck('name')->toArray()) }}
+
+
+
+
+
+
+https://www.techiediaries.com/laravel-8-ajax-crud-modal-pagination/

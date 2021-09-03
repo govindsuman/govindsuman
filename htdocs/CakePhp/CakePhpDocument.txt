@@ -1,0 +1,11 @@
+https://github.com/CakeDC/oven
+git clone https://github.com/CakeDC/oven.git
+
+composer create-project --prefer-dist cakephp/app:~4.0 my_app
+cakephp_myapp
+
+1->cake bake controller Students
+2->cake bake model Students
+3->cake bake template Students
+
+3->cake bake all products
